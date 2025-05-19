@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive typing lessons for all skill levels. Improve your typing speed and accuracy with our structured courses.">
+    <title>Typing Lessons - TypeMaster</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_ADSENSE_ID" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">Type<span>Master</span></a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="lessons.html" class="active">Lessons</a></li>
+                    <li><a href="speed-test.html">Speed Test</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="profile.html" class="btn-login">Login</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Lessons Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Typing Lessons</h1>
+            <p>Structured courses to improve your typing speed and accuracy</p>
+        </div>
+    </section>
+
+    <!-- Ad Banner -->
+    <div class="ad-banner">
+        <div class="container">
+            <!-- AdSense Ad Unit -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-YOUR_ADSENSE_ID"
+                 data-ad-slot="YOUR_AD_SLOT_ID"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+
+    <!-- Lessons Section -->
+    <section class="lessons-section">
+        <div class="container">
+            <div class="lessons-tabs">
+                <button class="tab-btn active" data-tab="beginner">Beginner</button>
+                <button class="tab-btn" data-tab="intermediate">Intermediate</button>
+                <button class="tab-btn" data-tab="advanced">Advanced</button>
+                <button class="tab-btn" data-tab="special">Special Courses</button>
+            </div>
+
+            <div class="lessons-content">
+                <!-- Beginner Lessons -->
+                <div class="tab-pane active" id="beginner">
+                    <div class="lesson-cards">
+                        <div class="lesson-card">
+                            <div class="lesson-info">
+                                <h3>Home Row Basics</h3>
+                                <p>Learn the foundation of touch typing with the home row keys.</p>
+                                <div class="lesson-meta">
+                                    <span><i class="fas fa-keyboard"></i> 15 Exercises</span>
+                                    <span><i class="fas fa-clock"></i> 30 min</span>
+                                </div>
+                                <div class="progress-container">
+                                    <div class="progress-bar" style="width: 0%"></div>
+                                    <span>0% Complete</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-start-lesson" data-lesson="1">Start Lesson</a>
+                        </div>
+                        <div class="lesson-card">
+                            <div class="lesson-info">
+                                <h3>Upper Row</h3>
+                                <p>Master the keys above the home row.</p>
+                                <div class="lesson-meta">
+                                    <span><i class="fas fa-keyboard"></i> 12 Exercises</span>
+                                    <span><i class="fas fa-clock"></i> 25 min</span>
+                                </div>
+                                <div class="progress-container">
+                                    <div class="progress-bar" style="width: 0%"></div>
+                                    <span>0% Complete</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-start-lesson" data-lesson="2">Start Lesson</a>
+                        </div>
+                        <div class="lesson-card">
+                            <div class="lesson-info">
+                                <h3>Bottom Row</h3>
+                                <p>Learn the keys below the home row.</p>
+                                <div class="lesson-meta">
+                                    <span><i class="fas fa-keyboard"></i> 10 Exercises</span>
+                                    <span><i class="fas fa-clock"></i> 20 min</span>
+                                </div>
+                                <div class="progress-container">
+                                    <div class="progress-bar" style="width: 0%"></div>
+                                    <span>0% Complete</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-start-lesson" data-lesson="3">Start Lesson</a>
+                        </div>
+                        <div class="lesson-card">
+                            <div class="lesson-info">
+                                <h3>Numbers Row</h3>
+                                <p>Practice typing numbers without looking.</p>
+                                <div class="lesson-meta">
+                                    <span><i class="fas fa-keyboard"></i> 8 Exercises</span>
+                                    <span><i class="fas fa-clock"></i> 15 min</span>
+                                </div>
+                                <div class="progress-container">
+                                    <div class="progress-bar" style="width: 0%"></div>
+                                    <span>0% Complete</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-start-lesson" data-lesson="4">Start Lesson</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Intermediate Lessons -->
+                <div class="tab-pane" id="intermediate">
+                    <div class="lesson-cards">
+                        <div class="lesson-card">
+                            <div class="lesson-info">
+                                <h3>Common Words</h3>
+                                <p>Practice with the 100 most common English words.</p>
+                                <div class="lesson-meta">
+                                    <span><i class="fas fa-keyboard"></i> 20 Exercises</span>
+                                    <span><i class="fas fa-clock"></i> 40 min</span>
+                                </div>
+                                <div class="progress-container">
+                                    <div class="progress-bar" style="width: 0%"></div>
+                                    <span>0% Complete</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-start-lesson" data-lesson="5">Start Lesson</a>
+                        </div>
+                        <div class="lesson-card">
+                            <div class="lesson-info">
+                                <h3>Punctuation</h3>
+                                <p>Master all common punctuation marks.</p>
+                                <div class="lesson-meta">
+                                    <span><i class="fas fa-keyboard"></i> 15 Exercises</span>
+                                    <span><i class="fas fa-clock"></i> 30 min</span>
+                                </div>
+                                <div class="progress-container">
+                                    <div class="progress-bar" style="width: 0%"></div>
+                                    <span>0% Complete</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-start-lesson" data-lesson="6">Start Lesson</a>
+                        </div>
+                        <div class="lesson-card">
+                            <div class="lesson-info">
+                                <h3>Capitalization</h3>
+                                <p>Practice proper capitalization with the shift key.</p>
+                                <div class="lesson-meta">
+                                    <span><i class="fas fa-keyboard"></i> 12 Exercises</span>
+                                    <span><i class="fas fa-clock"></i> 25 min</span>
+                                </div>
+                                <div class="progress-container">
+                                    <div class="progress-bar" style="width: 0%"></div>
+                                    <span>0% Complete</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-start-lesson" data-lesson="7">Start Lesson</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Advanced Lessons -->
+                <div class="tab-pane" id="advanced">
+                    <div class="lesson-cards">
+                        <div class="lesson-card">
+                            <div class="lesson-info">
+                                <h3>Advanced Sentences</h3>
+                                <p>Challenge yourself with complex sentences.</p>
+                                <div class="lesson-meta">
+                                    <span><i class="fas fa-keyboard"></i> 25 Exercises</span>
+                                    <span><i class="fas fa-clock"></i> 50 min</span>
+                                </div>
+                                <div class="progress-container">
+                                    <div class="progress-bar" style="width: 0%"></div>
+                                    <span>0% Complete</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-start-lesson" data-lesson="8">Start Lesson</a>
+                        </div>
+                        <div class="lesson-card">
+                            <div class="lesson-info">
+                                <h3>Technical Terms</h3>
+                                <p>Practice with specialized vocabulary.</p>
+                                <div class="lesson-meta">
+                                    <span><i class="fas fa-keyboard"></i> 20 Exercises</span>
+                                    <span><i class="fas fa-clock"></i> 40 min</span>
+                                </div>
+                                <div class="progress-container">
+                                    <div class="progress-bar" style="width: 0%"></div>
+                                    <span>0% Complete</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-start-lesson" data-lesson="9">Start Lesson</a>
+                        </div>
+                        <div class="lesson-card">
+                            <div class="lesson-info">
+                                <h3>Speed Drills</h3>
+                                <p>Exercises specifically designed to increase your WPM.</p>
+                                <div class="lesson-meta">
+                                    <span><i class="fas fa-keyboard"></i> 30 Exercises</span>
+                                    <span><i class="fas fa-clock"></i> 60 min</span>
+                                </div>
+                                <div class="progress-container">
+                                    <div class="progress-bar" style="width: 0%"></div>
+                                    <span>0% Complete</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-start-lesson" data-lesson="10">Start Lesson</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Special Courses -->
+                <div class="tab-pane" id="special">
+                    <div class="lesson-cards">
+                        <div class="lesson-card">
+                            <div class="lesson-info">
+                                <h3>Programming</h3>
+                                <p>Special exercises for coders with symbols and syntax.</p>
+                                <div class="lesson-meta">
+                                    <span><i class="fas fa-keyboard"></i> 25 Exercises</span>
+                                    <span><i class="fas fa-clock"></i> 50 min</span>
+                                </div>
+                                <div class="progress-container">
+                                    <div class="progress-bar" style="width: 0%"></div>
+                                    <span>0% Complete</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-start-lesson" data-lesson="11">Start Lesson</a>
+                        </div>
+                        <div class="lesson-card">
+                            <div class="lesson-info">
+                                <h3>Medical Terms</h3>
+                                <p>Practice with medical terminology.</p>
+                                <div class="lesson-meta">
+                                    <span><i class="fas fa-keyboard"></i> 20 Exercises</span>
+                                    <span><i class="fas fa-clock"></i> 40 min</span>
+                                </div>
+                                <div class="progress-container">
+                                    <div class="progress-bar" style="width: 0%"></div>
+                                    <span>0% Complete</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-start-lesson" data-lesson="12">Start Lesson</a>
+                        </div>
+                        <div class="lesson-card">
+                            <div class="lesson-info">
+                                <h3>Legal Terms</h3>
+                                <p>Typing practice with legal terminology.</p>
+                                <div class="lesson-meta">
+                                    <span><i class="fas fa-keyboard"></i> 18 Exercises</span>
+                                    <span><i class="fas fa-clock"></i> 35 min</span>
+                                </div>
+                                <div class="progress-container">
+                                    <div class="progress-bar" style="width: 0%"></div>
+                                    <span>0% Complete</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-start-lesson" data-lesson="13">Start Lesson</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Typing Practice Modal -->
+    <div class="typing-modal" id="typingModal">
+        <div class="typing-container">
+            <div class="typing-header">
+                <h3 id="lessonTitle">Home Row Basics</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="typing-content">
+                <div class="typing-stats">
+                    <div class="stat-box">
+                        <span>WPM</span>
+                        <span id="wpmCounter">0</span>
+                    </div>
+                    <div class="stat-box">
+                        <span>Accuracy</span>
+                        <span id="accuracyCounter">100%</span>
+                    </div>
+                    <div class="stat-box">
+                        <span>Time</span>
+                        <span id="timeCounter">00:00</span>
+                    </div>
+                </div>
+                <div class="typing-exercise">
+                    <div class="text-display" id="textDisplay">
+                        Click "Start" to begin the exercise. Place your fingers on the home row keys.
+                    </div>
+                    <div class="keyboard-visual">
+                        <div class="keyboard-row">
+                            <div class="key" data-key="`">~<br>`</div>
+                            <div class="key" data-key="1">!<br>1</div>
+                            <div class="key" data-key="2">@<br>2</div>
+                            <div class="key" data-key="3">#<br>3</div>
+                            <div class="key" data-key="4">$<br>4</div>
+                            <div class="key" data-key="5">%<br>5</div>
+                            <div class="key" data-key="6">^<br>6</div>
+                            <div class="key" data-key="7">&<br>7</div>
+                            <div class="key" data-key="8">*<br>8</div>
+                            <div class="key" data-key="9">(<br>9</div>
+                            <div class="key" data-key="0">)<br>0</div>
+                            <div class="key" data-key="-">_<br>-</div>
+                            <div class="key" data-key="=">+<br>=</div>
+                            <div class="key backspace">Backspace</div>
+                        </div>
+                        <div class="keyboard-row">
+                            <div class="key tab">Tab</div>
+                            <div class="key" data-key="q">Q</div>
+                            <div class="key" data-key="w">W</div>
+                            <div class="key" data-key="e">E</div>
+                            <div class="key" data-key="r">R</div>
+                            <div class="key" data-key="t">T</div>
+                            <div class="key" data-key="y">Y</div>
+                            <div class="key" data-key="u">U</div>
+                            <div class="key" data-key="i">I</div>
+                            <div class="key" data-key="o">O</div>
+                            <div class="key" data-key="p">P</div>
+                            <div class="key" data-key="[">{<br>[</div>
+                            <div class="key" data-key="]">}<br>]</div>
+                            <div class="key" data-key="\">|<br>\</div>
+                        </div>
+                        <div class="keyboard-row">
+                            <div class="key caps">Caps</div>
+                            <div class="key" data-key="a">A</div>
+                            <div class="key" data-key="s">S</div>
+                            <div class="key" data-key="d">D</div>
+                            <div class="key" data-key="f">F</div>
+                            <div class="key" data-key="g">G</div>
+                            <div class="key" data-key="h">H</div>
+                            <div class="key" data-key="j">J</div>
+                            <div class="key" data-key="k">K</div>
+                            <div class="key" data-key="l">L</div>
+                            <div class="key" data-key=";">:<br>;</div>
+                            <div class="key" data-key="'">"<br>'</div>
+                            <div class="key enter">Enter</div>
+                        </div>
+                        <div class="keyboard-row">
+                            <div class="key shift left">Shift</div>
+                            <div class="key" data-key="z">Z</div>
+                            <div class="key" data-key="x">X</div>
+                            <div class="key" data-key="c">C</div>
+                            <div class="key" data-key="v">V</div>
+                            <div class="key" data-key="b">B</div>
+                            <div class="key" data-key="n">N</div>
+                            <div class="key" data-key="m">M</div>
+                            <div class="key" data-key=","><<br>,</div>
+                            <div class="key" data-key=".">><br>.</div>
+                            <div class="key" data-key="/">?<br>/</div>
+                            <div class="key shift right">Shift</div>
+                        </div>
+                        <div class="keyboard-row">
+                            <div class="key ctrl">Ctrl</div>
+                            <div class="key win">Win</div>
+                            <div class="key alt">Alt</div>
+                            <div class="key space">Space</div>
+                            <div class="key alt">Alt</div>
+                            <div class="key win">Win</div>
+                            <div class="key menu">Menu</div>
+                            <div class="key ctrl">Ctrl</div>
+                        </div>
+                    </div>
+                    <textarea class="typing-input" id="typingInput" placeholder="Start typing here..." autofocus></textarea>
+                </div>
+                <div class="typing-controls">
+                    <button class="btn-secondary" id="btnRestart">Restart</button>
+                    <button class="btn-primary" id="btnStart">Start</button>
+                    <button class="btn-secondary" id="btnNext">Next Exercise</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Modal -->
+    <div class="results-modal" id="resultsModal">
+        <div class="results-container">
+            <div class="results-header">
+                <h3>Lesson Completed!</h3>
+                <button class="close-results">&times;</button>
+            </div>
+            <div class="results-content">
+                <div class="results-stats">
+                    <div class="result-box">
+                        <span>WPM</span>
+                        <span id="finalWpm">0</span>
+                    </div>
+                    <div class="result-box">
+                        <span>Accuracy</span>
+                        <span id="finalAccuracy">0%</span>
+                    </div>
+                    <div class="result-box">
+                        <span>Time</span>
+                        <span id="finalTime">00:00</span>
+                    </div>
+                    <div class="result-box">
+                        <span>Errors</span>
+                        <span id="finalErrors">0</span>
+                    </div>
+                </div>
+                <div class="results-chart">
+                    <canvas id="resultsChart"></canvas>
+                </div>
+                <div class="results-actions">
+                    <button class="btn-secondary" id="btnPracticeAgain">Practice Again</button>
+                    <button class="btn-primary" id="btnNextLesson">Next Lesson</button>
+                    <button class="btn-secondary" id="btnSaveResults">Save Results</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>TypeMaster</h3>
+                    <p>Helping you type faster and more accurately since 2023.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="lessons.html">Lessons</a></li>
+                        <li><a href="speed-test.html">Speed Test</a></li>
+                        <li><a href="games.html">Games</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="support.html">FAQs</a></li>
+                        <li><a href="support.html">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for tips and updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 TypeMaster. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/typing.js"></script>
+</body>
+</html>
