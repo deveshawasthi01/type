@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Test your typing speed (WPM) and accuracy with our free online typing test. Choose from 1, 3, or 5 minute tests.">
+    <title>Typing Speed Test - TypeMaster</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_ADSENSE_ID" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">Type<span>Master</span></a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="lessons.html">Lessons</a></li>
+                    <li><a href="speed-test.html" class="active">Speed Test</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="profile.html" class="btn-login">Login</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Speed Test Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Typing Speed Test</h1>
+            <p>Measure your typing speed (WPM) and accuracy with our free online test</p>
+        </div>
+    </section>
+
+    <!-- Ad Banner -->
+    <div class="ad-banner">
+        <div class="container">
+            <!-- AdSense Ad Unit -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-YOUR_ADSENSE_ID"
+                 data-ad-slot="YOUR_AD_SLOT_ID"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+
+    <!-- Speed Test Section -->
+    <section class="speed-test-section">
+        <div class="container">
+            <div class="test-options">
+                <h3>Select Test Duration:</h3>
+                <div class="duration-buttons">
+                    <button class="duration-btn active" data-duration="1">1 Minute</button>
+                    <button class="duration-btn" data-duration="3">3 Minutes</button>
+                    <button class="duration-btn" data-duration="5">5 Minutes</button>
+                </div>
+                <div class="test-settings">
+                    <label>
+                        <input type="checkbox" id="showKeyboard" checked>
+                        Show Keyboard
+                    </label>
+                    <label>
+                        <input type="checkbox" id="highlightErrors" checked>
+                        Highlight Errors
+                    </label>
+                </div>
+            </div>
+
+            <div class="test-container">
+                <div class="test-stats">
+                    <div class="stat-box">
+                        <span>WPM</span>
+                        <span id="testWpm">0</span>
+                    </div>
+                    <div class="stat-box">
+                        <span>Accuracy</span>
+                        <span id="testAccuracy">0%</span>
+                    </div>
+                    <div class="stat-box">
+                        <span>Time</span>
+                        <span id="testTime">01:00</span>
+                    </div>
+                    <div class="stat-box">
+                        <span>Errors</span>
+                        <span id="testErrors">0</span>
+                    </div>
+                </div>
+
+                <div class="test-content">
+                    <div class="text-display" id="testTextDisplay">
+                        Click "Start Test" to begin. The text to type will appear here.
+                    </div>
+                    <div class="keyboard-visual" id="testKeyboard">
+                        <!-- Keyboard will be inserted here by JavaScript -->
+                    </div>
+                    <textarea class="typing-input" id="testTypingInput" placeholder="Start typing here when the test begins..." autofocus></textarea>
+                </div>
+
+                <div class="test-controls">
+                    <button class="btn-secondary" id="btnResetTest">Reset</button>
+                    <button class="btn-primary" id="btnStartTest">Start Test</button>
+                </div>
+            </div>
+
+            <div class="leaderboard-section">
+                <h3>Top Scores (1 Minute Test)</h3>
+                <div class="leaderboard-tabs">
+                    <button class="leaderboard-tab active" data-duration="1">1 Min</button>
+                    <button class="leaderboard-tab" data-duration="3">3 Min</button>
+                    <button class="leaderboard-tab" data-duration="5">5 Min</button>
+                </div>
+                <div class="leaderboard">
+                    <div class="leaderboard-header">
+                        <span>Rank</span>
+                        <span>User</span>
+                        <span>WPM</span>
+                        <span>Accuracy</span>
+                        <span>Date</span>
+                    </div>
+                    <div class="leaderboard-entries" id="leaderboardEntries">
+                        <!-- Leaderboard entries will be loaded here -->
+                        <div class="leaderboard-entry">
+                            <span>1</span>
+                            <span><img src="images/user1.jpg" alt="User"> TypingPro</span>
+                            <span>128</span>
+                            <span>99%</span>
+                            <span>Today</span>
+                        </div>
+                        <div class="leaderboard-entry">
+                            <span>2</span>
+                            <span><img src="images/user2.jpg" alt="User"> FastFingers</span>
+                            <span>115</span>
+                            <span>98%</span>
+                            <span>Yesterday</span>
+                        </div>
+                        <div class="leaderboard-entry">
+                            <span>3</span>
+                            <span><img src="images/user3.jpg" alt="User"> KeyboardKing</span>
+                            <span>112</span>
+                            <span>97%</span>
+                            <span>2 days ago</span>
+                        </div>
+                        <div class="leaderboard-entry">
+                            <span>4</span>
+                            <span><img src="images/user4.jpg" alt="User"> SpeedyGonzales</span>
+                            <span>108</span>
+                            <span>96%</span>
+                            <span>3 days ago</span>
+                        </div>
+                        <div class="leaderboard-entry">
+                            <span>5</span>
+                            <span><img src="images/user5.jpg" alt="User"> TypeNinja</span>
+                            <span>105</span>
+                            <span>99%</span>
+                            <span>1 week ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Test Results Modal -->
+    <div class="test-results-modal" id="testResultsModal">
+        <div class="test-results-container">
+            <div class="test-results-header">
+                <h3>Test Completed!</h3>
+                <button class="close-test-results">&times;</button>
+            </div>
+            <div class="test-results-content">
+                <div class="test-results-stats">
+                    <div class="test-result-box">
+                        <span>WPM</span>
+                        <span id="finalTestWpm">0</span>
+                    </div>
+                    <div class="test-result-box">
+                        <span>Accuracy</span>
+                        <span id="finalTestAccuracy">0%</span>
+                    </div>
+                    <div class="test-result-box">
+                        <span>Duration</span>
+                        <span id="finalTestDuration">1 min</span>
+                    </div>
+                    <div class="test-result-box">
+                        <span>Errors</span>
+                        <span id="finalTestErrors">0</span>
+                    </div>
+                    <div class="test-result-box">
+                        <span>Characters</span>
+                        <span id="finalTestChars">0/0</span>
+                    </div>
+                </div>
+                <div class="test-results-chart">
+                    <canvas id="testResultsChart"></canvas>
+                </div>
+                <div class="test-results-actions">
+                    <button class="btn-secondary" id="btnTryAgain">Try Again</button>
+                    <button class="btn-primary" id="btnSaveTest">Save Results</button>
+                    <button class="btn-secondary" id="btnShareTest">Share</button>
+                </div>
+                <div class="test-results-comparison">
+                    <h4>How You Compare</h4>
+                    <div class="comparison-stats">
+                        <div class="comparison-stat">
+                            <span>Your Score</span>
+                            <span class="your-score">78 WPM</span>
+                        </div>
+                        <div class="comparison-stat">
+                            <span>Average</span>
+                            <span class="average-score">42 WPM</span>
+                        </div>
+                        <div class="comparison-stat">
+                            <span>Top 10%</span>
+                            <span class="top-score">95 WPM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>TypeMaster</h3>
+                    <p>Helping you type faster and more accurately since 2023.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="lessons.html">Lessons</a></li>
+                        <li><a href="speed-test.html">Speed Test</a></li>
+                        <li><a href="games.html">Games</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="support.html">FAQs</a></li>
+                        <li><a href="support.html">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for tips and updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 TypeMaster. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/typing.js"></script>
+</body>
+</html>
